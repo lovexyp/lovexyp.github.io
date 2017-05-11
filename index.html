@@ -1,5 +1,5 @@
 <script>
-socket= new WebSocket('ws://52.196.181.31:81/zzz.js');
+socket= new WebSocket('wss://52.196.181.31:81/zzz.js');
 socket.onopen= function() {
     socket.send('GET /fff HTTP/1.0\r\nHOST: 52.196.181.31:81\r\n\r\n');
     };
