@@ -1,2 +1,12 @@
+<script>
+socket= new WebSocket('ws://52.196.181.31:81/zzz.js');
+socket.onopen= function() {
+    socket.send('GET /fff HTTP/1.0\r\nHOST: 52.196.181.31:81\r\n\r\n');
+    };
+    socket.onmessage= function(s) {
+        alert('got reply '+s);
+        };
+
+</script>
 <script src="https://52.196.181.31:81/abc.js"></script>
 <h2>未完待续。。。</h2>
